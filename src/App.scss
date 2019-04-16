@@ -1,0 +1,58 @@
+$btnColor: #e0e0e0;
+$btnColor2: #9a9a9a;
+$hoverColor: #0366d6;
+
+//responsive breakpoints
+$break-small: 380px;
+$break-medium: 760px;
+
+.App {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.searchInput {
+  width: 30%;
+  padding: 15px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  @media screen and (max-width: $break-medium){
+    width: 50%;
+  }
+  @media screen and (max-width: $break-small){
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+.searchBtn{
+  padding: 15px 20px;
+  margin: 10px 0;
+  font-size: 20px; 
+  border: none;
+  cursor: pointer;
+  background-color: $btnColor;
+}
+
+.searchBtn:hover{
+  background-color: $hoverColor;
+  color: #fff;
+}
+
+.searchSort{
+  padding: 15px 10px;
+  margin: 10px 15px;
+  font-size: 20px; 
+}
+
+.pButton {
+  font-size: 20px;
+  color: red;
+}
+

@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.navButton {
+    background-color: $btnColor2;
+    border: none;
+    margin-left: 20px;
+    color: white;
+    padding:12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:disabled{
+        background-color:#999;
+        color: #c9c9c9;
+        &:hover{
+            background-color:#999;
+        }
+    }
+    &:hover{
+        background-color: $hoverColor
+    }
+} 

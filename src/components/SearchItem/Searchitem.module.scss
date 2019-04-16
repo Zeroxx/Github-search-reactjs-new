@@ -1,0 +1,25 @@
+@import "../../App.scss";
+
+.Searchitem {
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+    border:1px solid #bbbbbb;
+    margin-top:10px;
+    width:20%;
+    color: #000;
+    @media screen and (max-width: $break-medium){
+        width: 50%;
+        display: inline-block;
+        margin: 10px 0;
+    }
+    @media screen and (max-width: $break-small){
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+    }
+    &:hover{
+        border: solid 3px $hoverColor;
+    }
+}
